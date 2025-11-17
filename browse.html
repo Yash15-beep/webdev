@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Skills - SkillSwap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SkillSwap</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html" class="active">Browse</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="browse-header">
+        <div class="container">
+            <h1>Browse Skills</h1>
+            <p>Find students to exchange skills with</p>
+            <!-- Added filter section for skill filtering -->
+            <div class="filter-section">
+                <input type="text" id="searchInput" class="search-box" placeholder="Search by name or skill...">
+                <select id="categoryFilter" class="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="tech">Technology</option>
+                    <option value="creative">Creative</option>
+                    <option value="language">Language</option>
+                    <option value="fitness">Fitness</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="profiles-grid">
+        <div class="container">
+            <!-- Added data attributes for filtering and dynamic content -->
+            <div class="profile-card" data-category="tech" data-name="Arjun" data-skills="Guitar,Python">
+                <div class="profile-image">A</div>
+                <h3>Arjun</h3>
+                <div class="skills">
+                    <span class="skill-offer">Offers: Guitar 🎸</span>
+                    <span class="skill-want">Wants: Python 🐍</span>
+                </div>
+                <button class="request-btn" onclick="requestExchange('Arjun')">Request Exchange</button>
+            </div>
+
+            <div class="profile-card" data-category="creative" data-name="Meera" data-skills="Graphic Design,Public Speaking">
+                <div class="profile-image">M</div>
+                <h3>Meera</h3>
+                <div class="skills">
+                    <span class="skill-offer">Offers: Graphic Design 🎨</span>
+                    <span class="skill-want">Wants: Public Speaking 🎤</span>
+                </div>
+                <button class="request-btn" onclick="requestExchange('Meera')">Request Exchange</button>
+            </div>
+
+            <div class="profile-card" data-category="language" data-name="Rohan" data-skills="Spanish,Photography">
+                <div class="profile-image">R</div>
+                <h3>Rohan</h3>
+                <div class="skills">
+                    <span class="skill-offer">Offers: Spanish 🇪🇸</span>
+                    <span class="skill-want">Wants: Photography 📷</span>
+                </div>
+                <button class="request-btn" onclick="requestExchange('Rohan')">Request Exchange</button>
+            </div>
+
+            <div class="profile-card" data-category="fitness" data-name="Priya" data-skills="Yoga,Data Science">
+                <div class="profile-image">P</div>
+                <h3>Priya</h3>
+                <div class="skills">
+                    <span class="skill-offer">Offers: Yoga 🧘</span>
+                    <span class="skill-want">Wants: Data Science 📊</span>
+                </div>
+                <button class="request-btn" onclick="requestExchange('Priya')">Request Exchange</button>
+            </div>
+
+            <div class="profile-card" data-category="tech" data-name="Sanjay" data-skills="Web Design,Marketing">
+                <div class="profile-image">S</div>
+                <h3>Sanjay</h3>
+                <div class="skills">
+                    <span class="skill-offer">Offers: Web Design 💻</span>
+                    <span class="skill-want">Wants: Marketing 📈</span>
+                </div>
+                <button class="request-btn" onclick="requestExchange('Sanjay')">Request Exchange</button>
+            </div>
+
+            <div class="profile-card" data-category="creative" data-name="Kavya" data-skills="Writing,Video Editing">
+                <div class="profile-image">K</div>
+                <h3>Kavya</h3>
+                <div class="skills">
+                    <span class="skill-offer">Offers: Writing ✍️</span>
+                    <span class="skill-want">Wants: Video Editing 🎬</span>
+                </div>
+                <button class="request-btn" onclick="requestExchange('Kavya')">Request Exchange</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

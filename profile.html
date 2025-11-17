@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - SkillSwap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SkillSwap</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-layout">
+                <div class="profile-left">
+                    <div class="profile-image-large">A</div>
+                    <h2>Arjun Sharma</h2>
+                    <p class="bio">Computer Science student passionate about music and technology. I've been playing guitar for 5 years and love teaching others. Currently learning programming and would love to exchange skills!</p>
+                </div>
+                <div class="profile-right">
+                    <h3>Skills I Offer</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag offer">Guitar Playing 🎸</span>
+                        <span class="skill-tag offer">Music Theory 🎵</span>
+                        <span class="skill-tag offer">Song Writing ✍️</span>
+                    </div>
+                    
+                    <h3>Skills I Want to Learn</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag want">Python Programming 🐍</span>
+                        <span class="skill-tag want">Web Development 💻</span>
+                        <span class="skill-tag want">Data Analysis 📊</span>
+                    </div>
+                    
+                    <!-- Added onclick handler for exchange button -->
+                    <button class="exchange-btn" onclick="requestExchange('Arjun')">Request Skill Exchange</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
